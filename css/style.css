@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'squer721bl';
+  src: url("../fonts/squer721bl.ttf");
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: sans-serif;	
+}
+header {
+  font-family: squer721bl;  
+}
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: squer721bl;
+}
+.navbar-brand {
+    text-transform: uppercase;
+}
+.padli-biography-nav-togle {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.padli-biography-nav-togle.active i::before, .padli-biography-nav-togle.active i::after {
+  background: #eee;
+}
+.padli-biography-nav-togle:hover, .padli-biography-nav-togle:focus, .padli-biography-nav-togle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.padli-biography-nav-togle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 3px;
+  color: #000;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #eee;
+  transition: all .2s ease-out;
+}
+.padli-biography-nav-togle i::before, .padli-biography-nav-togle i::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background: #eee;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.padli-biography-nav-togle i::before {
+  top: -7px;
+}
+.padli-biography-nav-togle i::after {
+  bottom: -7px;
+}
+.padli-biography-nav-togle:hover i::before {
+  top: -10px;
+}
+.padli-biography-nav-togle:hover i::after {
+  bottom: -10px;
+}
+.padli-biography-nav-togle.active i {
+  background: transparent;
+}
+.padli-biography-nav-togle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.padli-biography-nav-togle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg); 
+}
+.padli-biography-nav-togle {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+  z-index: 21;
+  padding: 6px 0 0 0;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  height: 44px;
+  width: 44px;
+  border-bottom: none !important;
+}
+#padli-biography-navbar {
+  border: 0; 
+}
+.navbar-padli-biography.fixed-navbar .navbar-brand {
+  line-height: 20px;
+  top: 0;
+  left: 103px;
+}
+#landing-page {
+  height: 100vh;
+  background-image: url('../img/index-img.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome-text {
+  width: 200px;
+  color: #fff;
+}
+.welcome-text a {
+color: #fff;
+font-family: squer721bl;
+}
+.logo.log-on {
+  font-family: squer721bl;
+  font-size: 45px;
+  text-transform: uppercase;
+  line-height: 50px;
+  margin-top: 30px;
+}
+#quick-contact {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+#quick-contact .btn {
+  width: 33.33333333%;
+}
+#quick-contact .btn-group, .btn-group-vertical {
+  display: block;
+}
+.btn-quick-contact {
+  background-color: #fff;
+}
+#quick-contact .fa-instagram {
+  color: #FF03E1;
+}
+#quick-contact .fa-facebook {
+  color: #005CFF;
+}
+#quick-contact .fa-whatsapp {
+  color: #26BE00;
+}
+#padli-biography-header .navbar-brand {
+  width: 86px;
+  padding: 5px 15px;
+  line-height: 20px;
+  font-family: squer721bl;
+  color: #eee;
+}
+.navbar-padli-biography {
+  background-color: #1c1c1c;
+  border: 0;
+}
+#padli-biography-navbar .navbar-nav>li>a {
+  color: #CECECE;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.5s;
+}
+#padli-biography-navbar .navbar-nav>li>a:hover {
+  color: rgb(255, 183, 87);
+}
+.page-active {
+  color: rgb(255, 146, 0) !important;
+}
+#padli-biography-navbar .navbar-nav>li>a.sosmed-nav {
+  color: #CECECE;
+  text-shadow: #333 2px 0px 1px;
+  font-size: 16px;
+}
+#padli-biography-navbar .navbar-nav>li>a.sosmed-nav:hover {
+  color: rgb(255, 183, 87);
+}
+#galeri {
+  min-height: 88vh;
+  margin-top: 12vh;
+}
+#galeri img {
+  margin-bottom: 20px;
+}
+#galeri img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+#photo-show #myModal {
+  padding: 0 !important;
+}
+#photo-show .modal-dialog {
+  width: 100%;
+  margin: 0;
+}
+#photo-show .modal-header {
+  border: 0;
+}
+#photo-show img {
+  max-height: 80vh;
+  margin: auto;
+}
+#photo-show .modal-body {
+  padding: 15px;
+  border: 0
+}
+#photo-show .modal-footer {
+  padding: 10px;
+  border: 0
+}
+.footer-bottom {
+  min-height: 12vh;
+  background-color: #1c1c1c;
+  color: #cecece;
+}
+.footer p {
+  line-height: 80px;
+  margin: 0;
+}
+.btn-go-up {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #333;
+  color: #cecece;
+  transition: 0.5s;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 24px;
+  text-align: center;
+  opacity: 0;
+}
+.btn.btn-go-up:hover {
+  color: #cecece;
+  background: #1c1c1c;
+  box-shadow: #555 0px 0px 10px;
+  opacity: 1;
+}
+.scroll-down .btn-go-up {
+  opacity: 0.5;
+}
+#about {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#contact {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 88vh;
+}
+.contact-form {
+  float: right;
+  padding: 30px 50px;
+  width: 45%;
+  top: 17vh;
+  height: 65vh;
+  position: relative;
+  background: rgba(238, 238, 238, 0.3);
+}
+.padli-form {
+  margin-bottom: 15px;
+  background: inherit;
+  color: #333;
+  border-radius: 0;
+  border-bottom: 1px solid;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: inset 0px -1px 0px 0px #333;
+}
+.text-contact {
+  font-family: squer721bl;
+  font-size: 16px;
+}
+#contact .title-page {
+  margin-top: 0;
+  font-size: 28px;
+  margin-bottom: 27px;
+  color: #8A8A8A;
+}
+.email-text {
+  font-family: squer721bl;
+  font-size: 20px;
+}
+.phone-text {
+  font-family: squer721bl;
+  font-size: 14px;
+}
+.btn-send {
+  background: inherit;
+  font-style: italic;
+  font-family: squer721bl;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  #padli-biography-header .navbar-brand {
+    line-height: 29px;
+    font-size: 25px;
+    height: 67px;
+  }
+  .navbar-padli-biography {
+    height: 10vh;
+    box-shadow: #333 0px 0px 5px 0px;
+  }
+  #padli-biography-navbar {
+    margin-top: 17px;
+  }
+  .navbar-padli-biography.fixed-navbar {
+    box-shadow: #333 0px 0px 5px 0px;
+  }
+  .navbar-padli-biography.fixed-navbar .navbar-nav>li>a {
+    line-height: 20px;
+  }
+  #landing-page {
+    background-position: 0 -615px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-padli-biography {
+    border: 0;
+    box-shadow: #333 0px 0px 5px 0px;
+  }
+  .sosmed-nav {
+    display: none !important;
+  }
+  .padli-biography-nav-togle {
+    display: block; 
+  } 
+  .navbar-padli-biography .navbar-brand {
+    top: 0;
+    left: 0;
+  }
+  .navbar-padli-biography.fixed-navbar .navbar-brand {
+    left: 0;
+  }
+  .welcome-text {
+    left: 10px;
+    position: absolute;
+  }
+  .logo.log-on {
+    font-size: 35px;
+    line-height: 37px;
+    margin-top: 15px;
+  }
+  #quick-contact {
+    display: block;
+    box-shadow: #333 0px 0px 1px 0px;
+  }
+  .footer p {
+    font-size: 12px;
+    line-height: 65px;
+  }
+  .footer-bottom {
+    min-height: 100px;
+  }
+  .btn-go-up {
+    bottom: 45px;
+    right: 15px;
+  }
+  .contact-form {
+    float: none;
+    padding: 20px;
+    width: 90%;
+    top: 17vh;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  #contact .title-page {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .email-text {
+    font-size: 16px;
+  }
+  #contact {
+    height: 117vh;
+  }
+}
